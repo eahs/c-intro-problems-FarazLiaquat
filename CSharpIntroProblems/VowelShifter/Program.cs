@@ -46,16 +46,90 @@ namespace VowelShifter
                 char current = input[i];
                 
                 // Turn any 'e' to a '3'
+                if (current == 'a')
+                {
+                    current = '1';
+                }
                 if (current == 'e')
+                {
+                    current = '2';
+                }
+                if (current == 'i')
                 {
                     current = '3';
                 }
+                if (current == 'o')
+                {
+                    current = '4';
+                }
+                if (current == 'u')
+                {
+                    current = '5';
+                }
+                if (current == '1')
+                {
+                    current = 'e';
+                }
+                if (current == '2')
+                {
+                    current = 'i';
+                }
+                if (current == '3')
+                {
+                    current = 'o';
+                }
+                if (current == '4')
+                {
+                    current = 'u';
+                }
+                if (current == '5')
+                {
+                    current = 'a';
+                }
+                if (current == 'A')
+                {
+                    current = '6';
+                }
+                if (current == 'E')
+                {
+                    current = '7';
+                }
+                if (current == 'I')
+                {
+                    current = '8';
+                }
+                if (current == 'O')
+                {
+                    current = '9';
+                }
+                if (current == 'U')
+                {
+                    current = '.';
+                }
+                if (current == '6')
+                {
+                    current = 'A';
+                }
+                if (current == '7')
+                {
+                    current = 'E';
+                }
+                if (current == '8')
+                {
+                    current = 'I';
+                }
+                if (current == '9')
+                {
+                    current = 'O';
+                }
+                if (current == '.')
+                {
+                    current = 'U';
+                }
+                
                 
                 // Make every other letter uppercase
-                if (i % 2 == 0)
-                {
-                    current = Char.ToUpper(current);
-                }
+                
                 
                 output += current;
             }
